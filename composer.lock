@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8d7d8ce929b16bf8fe6e4ce695e0454c",
+    "content-hash": "bffc2c4a00233111cb9804aeed98e2ad",
     "packages": [
         {
             "name": "clue/stream-filter",
@@ -126,12 +126,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/flow-php/etl.git",
-                "reference": "91fff01f5b7f0de10e4a7ca423d40ba610223f3e"
+                "reference": "6c09ca8cc3d6d03e1e272534b4d3eb544d08cbd9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/flow-php/etl/zipball/91fff01f5b7f0de10e4a7ca423d40ba610223f3e",
-                "reference": "91fff01f5b7f0de10e4a7ca423d40ba610223f3e",
+                "url": "https://api.github.com/repos/flow-php/etl/zipball/6c09ca8cc3d6d03e1e272534b4d3eb544d08cbd9",
+                "reference": "6c09ca8cc3d6d03e1e272534b4d3eb544d08cbd9",
                 "shasum": ""
             },
             "require": {
@@ -192,22 +192,23 @@
         },
         {
             "name": "flow-php/etl-adapter-csv",
-            "version": "0.4.0",
+            "version": "1.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/flow-php/etl-adapter-csv.git",
-                "reference": "42333d56edfd760672d31cde259f5a739cd3bad3"
+                "reference": "4016b2459c56ba02575b1ca1b81eabade4e9f5c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/flow-php/etl-adapter-csv/zipball/42333d56edfd760672d31cde259f5a739cd3bad3",
-                "reference": "42333d56edfd760672d31cde259f5a739cd3bad3",
+                "url": "https://api.github.com/repos/flow-php/etl-adapter-csv/zipball/4016b2459c56ba02575b1ca1b81eabade4e9f5c0",
+                "reference": "4016b2459c56ba02575b1ca1b81eabade4e9f5c0",
                 "shasum": ""
             },
             "require": {
-                "flow-php/etl": "^0.2 || 1.x-dev",
+                "flow-php/etl": "^0.4 || 1.x-dev",
                 "php": "~8.1 || ~8.2"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -231,27 +232,27 @@
             ],
             "support": {
                 "issues": "https://github.com/flow-php/etl-adapter-csv/issues",
-                "source": "https://github.com/flow-php/etl-adapter-csv/tree/0.4.0"
+                "source": "https://github.com/flow-php/etl-adapter-csv/tree/1.x"
             },
-            "time": "2023-10-13T09:59:20+00:00"
+            "time": "2023-11-06T18:19:30+00:00"
         },
         {
             "name": "flow-php/etl-adapter-http",
-            "version": "0.4.0",
+            "version": "1.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/flow-php/etl-adapter-http.git",
-                "reference": "cee550214585cbe9b2a9f0b5408ef65b15662c94"
+                "reference": "453a3f523421d014f0bb345fe9c249a3d5eb0cfe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/flow-php/etl-adapter-http/zipball/cee550214585cbe9b2a9f0b5408ef65b15662c94",
-                "reference": "cee550214585cbe9b2a9f0b5408ef65b15662c94",
+                "url": "https://api.github.com/repos/flow-php/etl-adapter-http/zipball/453a3f523421d014f0bb345fe9c249a3d5eb0cfe",
+                "reference": "453a3f523421d014f0bb345fe9c249a3d5eb0cfe",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "flow-php/etl": "^0.2 || 1.x-dev",
+                "flow-php/etl": "^0.4 || 1.x-dev",
                 "php": "~8.1 || ~8.2",
                 "psr/http-client": "^1.0"
             },
@@ -259,6 +260,7 @@
                 "nyholm/psr7": "^1.4",
                 "php-http/curl-client": "^2.2"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -281,9 +283,115 @@
             ],
             "support": {
                 "issues": "https://github.com/flow-php/etl-adapter-http/issues",
-                "source": "https://github.com/flow-php/etl-adapter-http/tree/0.4.0"
+                "source": "https://github.com/flow-php/etl-adapter-http/tree/1.x"
             },
-            "time": "2023-10-13T09:59:56+00:00"
+            "time": "2023-11-04T17:22:14+00:00"
+        },
+        {
+            "name": "flow-php/etl-adapter-json",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/flow-php/etl-adapter-json.git",
+                "reference": "22885cd321f1bc244c45e85060a18db956c66493"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/flow-php/etl-adapter-json/zipball/22885cd321f1bc244c45e85060a18db956c66493",
+                "reference": "22885cd321f1bc244c45e85060a18db956c66493",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "flow-php/etl": "^0.4 || 1.x-dev",
+                "halaxa/json-machine": "^1.0",
+                "php": "~8.1 || ~8.2"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Flow\\": [
+                        "src/Flow"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "PHP ETL - Adapter - JSON",
+            "keywords": [
+                "adapter",
+                "etl",
+                "extract",
+                "json",
+                "load",
+                "transform"
+            ],
+            "support": {
+                "issues": "https://github.com/flow-php/etl-adapter-json/issues",
+                "source": "https://github.com/flow-php/etl-adapter-json/tree/1.x"
+            },
+            "time": "2023-11-05T12:46:12+00:00"
+        },
+        {
+            "name": "halaxa/json-machine",
+            "version": "1.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/halaxa/json-machine.git",
+                "reference": "514025c5ebbdb8a058745b573b4a1e81d685802c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/halaxa/json-machine/zipball/514025c5ebbdb8a058745b573b4a1e81d685802c",
+                "reference": "514025c5ebbdb8a058745b573b4a1e81d685802c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "ext-json": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "phpunit/phpunit": "^8.0"
+            },
+            "suggest": {
+                "ext-json": "To run JSON Machine out of the box without custom decoders.",
+                "guzzlehttp/guzzle": "To run example with GuzzleHttp"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "JsonMachine\\": "src/"
+                },
+                "exclude-from-classmap": [
+                    "src/autoloader.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Filip Halaxa",
+                    "email": "filip@halaxa.cz"
+                }
+            ],
+            "description": "Efficient, easy-to-use and fast JSON pull parser",
+            "support": {
+                "issues": "https://github.com/halaxa/json-machine/issues",
+                "source": "https://github.com/halaxa/json-machine/tree/1.1.3"
+            },
+            "funding": [
+                {
+                    "url": "https://ko-fi.com/G2G57KTE4",
+                    "type": "other"
+                }
+            ],
+            "time": "2022-10-12T11:40:33+00:00"
         },
         {
             "name": "league/flysystem",
@@ -4548,7 +4656,10 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "flow-php/etl": 20
+        "flow-php/etl": 20,
+        "flow-php/etl-adapter-csv": 20,
+        "flow-php/etl-adapter-http": 20,
+        "flow-php/etl-adapter-json": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

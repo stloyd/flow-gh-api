@@ -9,9 +9,11 @@ use Flow\ETL\Adapter\Http\PsrHttpClientDynamicExtractor;
 use Flow\ETL\ConfigBuilder;
 use Flow\ETL\DSL\CSV;
 use Flow\ETL\DSL\From;
+use Flow\ETL\DSL\Json;
 use Flow\ETL\DSL\To;
 use Flow\ETL\Filesystem\SaveMode;
 use Flow\ETL\Flow;
+use Flow\ETL\GroupBy\Aggregation;
 use Flow\ETL\Window;
 use Http\Client\Curl\Client;
 use Nyholm\Psr7\Factory\Psr17Factory;
@@ -44,18 +46,23 @@ final class ReportCommand extends Command
         $repository = $input->getArgument('repository');
 
         (new Flow((new ConfigBuilder)->putInputIntoRows()->build()))
-            ->read(CSV::from(__DIR__."/../../warehouse/dev/{$org}/{$repository}/pr/date_utc=*"))
+            ->read(Json::from(__DIR__."/../../warehouse/dev/{$org}/{$repository}/pr/date_utc=*"))
 
 //            ->limit(100)
 
-            ->withEntry('count', Window::partitionBy(ref('date_utc'))->rowNumber())
-            ->select('_input_file_uri', 'date_utc', 'count')
-
+            ->withEntry("user", ref("user")->arrayGet("login"))
+            ->select('date_utc', 'user')
+            ->withEntry('rank', Window::partitionBy(ref("user"))->rank())
+//            ->groupBy('date_utc', 'user')->aggregate(Aggregation::sum(ref("rank")))
+//            ->sortBy(ref("date_utc")->desc(), ref("rank_sum")->desc())
             ->write(To::output(false))
+//            ->partitionBy(ref('date_utc'))
+//            ->write(CSV::to(__DIR__."/../../warehouse/dev/{$org}/{$repository}/report/"))
 
+            ->dropDuplicates('date_utc', 'user', "rank")
             // Save with overwrite
-//            ->mode(SaveMode::Overwrite)
-//            ->write(CSV::to(__DIR__."/../../warehouse/dev/{$org}/{$repository}/report/year.csv"))
+            ->mode(SaveMode::Overwrite)
+            ->write(CSV::to(__DIR__."/../../warehouse/dev/{$org}/{$repository}/report/year.csv"))
             // Execute
             ->run()
         ;
