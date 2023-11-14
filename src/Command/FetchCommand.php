@@ -6,7 +6,6 @@ namespace App\Command;
 
 use App\Factory\GithubRequestFactory;
 use Flow\ETL\Adapter\Http\PsrHttpClientDynamicExtractor;
-use Flow\ETL\DSL\CSV;
 use Flow\ETL\DSL\Json;
 use Flow\ETL\Filesystem\SaveMode;
 use Flow\ETL\Flow;
@@ -60,21 +59,8 @@ final class FetchCommand extends Command
             ->renameAll('data.', '')
             ->drop('unpacked', 'data')
 
-            // Compress arrays
-//            ->withEntry('user', ref('user')->arrayGet("user.login"))
-//            ->withEntry('assignee', ref('assignee')->jsonEncode())
-//            ->withEntry('assignees', ref('assignees')->jsonEncode())
-//            ->withEntry('requested_reviewers', ref('requested_reviewers')->jsonEncode())
-//            ->withEntry('requested_teams', ref('requested_teams')->jsonEncode())
-//            ->withEntry('labels', ref('labels')->jsonEncode())
-//            ->withEntry('head', ref('head')->jsonEncode())
-//            ->withEntry('base', ref('base')->jsonEncode())
-//            ->withEntry('auto_merge', ref('auto_merge')->jsonEncode())
-//            ->withEntry('milestone', ref('milestone')->jsonEncode())
-//            ->withEntry('_links', ref('_links')->jsonEncode())
-
             // Unify key for partitioning
-            ->select("created_at", "user")
+            ->select('created_at', 'user')
             ->withEntry('date_utc', ref('created_at')->toDateTime(\DATE_ATOM)->dateFormat())
 
             // Save with overwrite, partition files per unified date

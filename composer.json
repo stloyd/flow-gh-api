@@ -4,6 +4,7 @@
     "require": {
         "php": "^8.1",
         "flow-php/etl": "1.x-dev",
+        "flow-php/etl-adapter-chartjs": "^1.x-dev",
         "flow-php/etl-adapter-csv": "^1.x-dev",
         "flow-php/etl-adapter-http": "^1.x-dev",
         "symfony/console": "^6.3",

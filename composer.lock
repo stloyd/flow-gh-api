@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bffc2c4a00233111cb9804aeed98e2ad",
+    "content-hash": "205b0002eadbc117d201367ba1751184",
     "packages": [
         {
             "name": "clue/stream-filter",
@@ -189,6 +189,52 @@
                 "source": "https://github.com/flow-php/etl/tree/1.x"
             },
             "time": "2023-11-12T22:50:47+00:00"
+        },
+        {
+            "name": "flow-php/etl-adapter-chartjs",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/flow-php/etl-adapter-chartjs.git",
+                "reference": "9601f22e930be00f86f8310cda86bb718356f4d3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/flow-php/etl-adapter-chartjs/zipball/9601f22e930be00f86f8310cda86bb718356f4d3",
+                "reference": "9601f22e930be00f86f8310cda86bb718356f4d3",
+                "shasum": ""
+            },
+            "require": {
+                "flow-php/etl": "^0.4 || 1.x-dev",
+                "php": "~8.1 || ~8.2"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Flow\\": [
+                        "src/Flow"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "PHP ETL - Adapter - ChartJS",
+            "keywords": [
+                "adapter",
+                "chartjs",
+                "etl",
+                "extract",
+                "load",
+                "transform"
+            ],
+            "support": {
+                "issues": "https://github.com/flow-php/etl-adapter-chartjs/issues",
+                "source": "https://github.com/flow-php/etl-adapter-chartjs/tree/1.x"
+            },
+            "time": "2023-11-03T13:32:21+00:00"
         },
         {
             "name": "flow-php/etl-adapter-csv",
@@ -2280,16 +2326,16 @@
         },
         {
             "name": "friendsofphp/php-cs-fixer",
-            "version": "v3.38.0",
+            "version": "v3.38.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer.git",
-                "reference": "7e6070026e76aa09d77a47519625c86593fb8e31"
+                "reference": "d872cdd543797ade030aaa307c0a4954a712e081"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/7e6070026e76aa09d77a47519625c86593fb8e31",
-                "reference": "7e6070026e76aa09d77a47519625c86593fb8e31",
+                "url": "https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/d872cdd543797ade030aaa307c0a4954a712e081",
+                "reference": "d872cdd543797ade030aaa307c0a4954a712e081",
                 "shasum": ""
             },
             "require": {
@@ -2361,7 +2407,7 @@
             ],
             "support": {
                 "issues": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/issues",
-                "source": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.38.0"
+                "source": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.38.2"
             },
             "funding": [
                 {
@@ -2369,7 +2415,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-11-07T08:44:54+00:00"
+            "time": "2023-11-14T00:19:22+00:00"
         },
         {
             "name": "myclabs/deep-copy",
@@ -4657,6 +4703,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "flow-php/etl": 20,
+        "flow-php/etl-adapter-chartjs": 20,
         "flow-php/etl-adapter-csv": 20,
         "flow-php/etl-adapter-http": 20,
         "flow-php/etl-adapter-json": 20
