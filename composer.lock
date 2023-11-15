@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "205b0002eadbc117d201367ba1751184",
+    "content-hash": "bffc2c4a00233111cb9804aeed98e2ad",
     "packages": [
         {
             "name": "clue/stream-filter",
@@ -126,27 +126,25 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/flow-php/etl.git",
-                "reference": "6c09ca8cc3d6d03e1e272534b4d3eb544d08cbd9"
+                "reference": "5a7637288514cc6afe6b3af500d02ccd08f45c60"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/flow-php/etl/zipball/6c09ca8cc3d6d03e1e272534b4d3eb544d08cbd9",
-                "reference": "6c09ca8cc3d6d03e1e272534b4d3eb544d08cbd9",
+                "url": "https://api.github.com/repos/flow-php/etl/zipball/5a7637288514cc6afe6b3af500d02ccd08f45c60",
+                "reference": "5a7637288514cc6afe6b3af500d02ccd08f45c60",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "ext-mbstring": "*",
                 "flow-php/array-dot": "^0.4 || 1.x-dev",
-                "league/flysystem": "^3.0",
                 "php": "~8.1 || ~8.2",
-                "psr/simple-cache": "^1.0 || ^2.0 || ^3.0"
+                "psr/simple-cache": "^1.0 || ^2.0 || ^3.0",
+                "webmozart/glob": "^3.0 || ^4.0"
             },
             "require-dev": {
                 "jawira/case-converter": "^3.4",
                 "laravel/serializable-closure": "^1.1",
-                "league/flysystem-aws-s3-v3": "^3.0",
-                "league/flysystem-azure-blob-storage": "^3.0",
                 "moneyphp/money": "^4",
                 "ramsey/uuid": "^4.5",
                 "symfony/uid": "^6.3"
@@ -188,53 +186,7 @@
                 "issues": "https://github.com/flow-php/etl/issues",
                 "source": "https://github.com/flow-php/etl/tree/1.x"
             },
-            "time": "2023-11-12T22:50:47+00:00"
-        },
-        {
-            "name": "flow-php/etl-adapter-chartjs",
-            "version": "1.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/flow-php/etl-adapter-chartjs.git",
-                "reference": "9601f22e930be00f86f8310cda86bb718356f4d3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/flow-php/etl-adapter-chartjs/zipball/9601f22e930be00f86f8310cda86bb718356f4d3",
-                "reference": "9601f22e930be00f86f8310cda86bb718356f4d3",
-                "shasum": ""
-            },
-            "require": {
-                "flow-php/etl": "^0.4 || 1.x-dev",
-                "php": "~8.1 || ~8.2"
-            },
-            "default-branch": true,
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Flow\\": [
-                        "src/Flow"
-                    ]
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "PHP ETL - Adapter - ChartJS",
-            "keywords": [
-                "adapter",
-                "chartjs",
-                "etl",
-                "extract",
-                "load",
-                "transform"
-            ],
-            "support": {
-                "issues": "https://github.com/flow-php/etl-adapter-chartjs/issues",
-                "source": "https://github.com/flow-php/etl-adapter-chartjs/tree/1.x"
-            },
-            "time": "2023-11-03T13:32:21+00:00"
+            "time": "2023-11-14T19:00:16+00:00"
         },
         {
             "name": "flow-php/etl-adapter-csv",
@@ -242,12 +194,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/flow-php/etl-adapter-csv.git",
-                "reference": "4016b2459c56ba02575b1ca1b81eabade4e9f5c0"
+                "reference": "08e3b1532f1753a2494733fa0c24cf39604fb9d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/flow-php/etl-adapter-csv/zipball/4016b2459c56ba02575b1ca1b81eabade4e9f5c0",
-                "reference": "4016b2459c56ba02575b1ca1b81eabade4e9f5c0",
+                "url": "https://api.github.com/repos/flow-php/etl-adapter-csv/zipball/08e3b1532f1753a2494733fa0c24cf39604fb9d4",
+                "reference": "08e3b1532f1753a2494733fa0c24cf39604fb9d4",
                 "shasum": ""
             },
             "require": {
@@ -280,7 +232,7 @@
                 "issues": "https://github.com/flow-php/etl-adapter-csv/issues",
                 "source": "https://github.com/flow-php/etl-adapter-csv/tree/1.x"
             },
-            "time": "2023-11-06T18:19:30+00:00"
+            "time": "2023-11-14T10:13:06+00:00"
         },
         {
             "name": "flow-php/etl-adapter-http",
@@ -288,12 +240,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/flow-php/etl-adapter-http.git",
-                "reference": "453a3f523421d014f0bb345fe9c249a3d5eb0cfe"
+                "reference": "f849ad1cf8bd92aafd576af915fda57c07ac40df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/flow-php/etl-adapter-http/zipball/453a3f523421d014f0bb345fe9c249a3d5eb0cfe",
-                "reference": "453a3f523421d014f0bb345fe9c249a3d5eb0cfe",
+                "url": "https://api.github.com/repos/flow-php/etl-adapter-http/zipball/f849ad1cf8bd92aafd576af915fda57c07ac40df",
+                "reference": "f849ad1cf8bd92aafd576af915fda57c07ac40df",
                 "shasum": ""
             },
             "require": {
@@ -303,7 +255,7 @@
                 "psr/http-client": "^1.0"
             },
             "require-dev": {
-                "nyholm/psr7": "^1.4",
+                "nyholm/psr7": "^1.8",
                 "php-http/curl-client": "^2.2"
             },
             "default-branch": true,
@@ -331,7 +283,7 @@
                 "issues": "https://github.com/flow-php/etl-adapter-http/issues",
                 "source": "https://github.com/flow-php/etl-adapter-http/tree/1.x"
             },
-            "time": "2023-11-04T17:22:14+00:00"
+            "time": "2023-11-14T10:13:26+00:00"
         },
         {
             "name": "flow-php/etl-adapter-json",
@@ -438,212 +390,6 @@
                 }
             ],
             "time": "2022-10-12T11:40:33+00:00"
-        },
-        {
-            "name": "league/flysystem",
-            "version": "3.19.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "1b2aa10f2326e0351399b8ce68e287d8e9209a83"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/1b2aa10f2326e0351399b8ce68e287d8e9209a83",
-                "reference": "1b2aa10f2326e0351399b8ce68e287d8e9209a83",
-                "shasum": ""
-            },
-            "require": {
-                "league/flysystem-local": "^3.0.0",
-                "league/mime-type-detection": "^1.0.0",
-                "php": "^8.0.2"
-            },
-            "conflict": {
-                "async-aws/core": "<1.19.0",
-                "async-aws/s3": "<1.14.0",
-                "aws/aws-sdk-php": "3.209.31 || 3.210.0",
-                "guzzlehttp/guzzle": "<7.0",
-                "guzzlehttp/ringphp": "<1.1.1",
-                "phpseclib/phpseclib": "3.0.15",
-                "symfony/http-client": "<5.2"
-            },
-            "require-dev": {
-                "async-aws/s3": "^1.5 || ^2.0",
-                "async-aws/simple-s3": "^1.1 || ^2.0",
-                "aws/aws-sdk-php": "^3.220.0",
-                "composer/semver": "^3.0",
-                "ext-fileinfo": "*",
-                "ext-ftp": "*",
-                "ext-zip": "*",
-                "friendsofphp/php-cs-fixer": "^3.5",
-                "google/cloud-storage": "^1.23",
-                "microsoft/azure-storage-blob": "^1.1",
-                "phpseclib/phpseclib": "^3.0.14",
-                "phpstan/phpstan": "^1.10",
-                "phpunit/phpunit": "^9.5.11|^10.0",
-                "sabre/dav": "^4.3.1"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "League\\Flysystem\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Frank de Jonge",
-                    "email": "info@frankdejonge.nl"
-                }
-            ],
-            "description": "File storage abstraction for PHP",
-            "keywords": [
-                "WebDAV",
-                "aws",
-                "cloud",
-                "file",
-                "files",
-                "filesystem",
-                "filesystems",
-                "ftp",
-                "s3",
-                "sftp",
-                "storage"
-            ],
-            "support": {
-                "issues": "https://github.com/thephpleague/flysystem/issues",
-                "source": "https://github.com/thephpleague/flysystem/tree/3.19.0"
-            },
-            "funding": [
-                {
-                    "url": "https://ecologi.com/frankdejonge",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/frankdejonge",
-                    "type": "github"
-                }
-            ],
-            "time": "2023-11-07T09:04:28+00:00"
-        },
-        {
-            "name": "league/flysystem-local",
-            "version": "3.19.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/thephpleague/flysystem-local.git",
-                "reference": "8d868217f9eeb4e9a7320db5ccad825e9a7a4076"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem-local/zipball/8d868217f9eeb4e9a7320db5ccad825e9a7a4076",
-                "reference": "8d868217f9eeb4e9a7320db5ccad825e9a7a4076",
-                "shasum": ""
-            },
-            "require": {
-                "ext-fileinfo": "*",
-                "league/flysystem": "^3.0.0",
-                "league/mime-type-detection": "^1.0.0",
-                "php": "^8.0.2"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "League\\Flysystem\\Local\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Frank de Jonge",
-                    "email": "info@frankdejonge.nl"
-                }
-            ],
-            "description": "Local filesystem adapter for Flysystem.",
-            "keywords": [
-                "Flysystem",
-                "file",
-                "files",
-                "filesystem",
-                "local"
-            ],
-            "support": {
-                "issues": "https://github.com/thephpleague/flysystem-local/issues",
-                "source": "https://github.com/thephpleague/flysystem-local/tree/3.19.0"
-            },
-            "funding": [
-                {
-                    "url": "https://ecologi.com/frankdejonge",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/frankdejonge",
-                    "type": "github"
-                }
-            ],
-            "time": "2023-11-06T20:35:28+00:00"
-        },
-        {
-            "name": "league/mime-type-detection",
-            "version": "1.14.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/thephpleague/mime-type-detection.git",
-                "reference": "b6a5854368533df0295c5761a0253656a2e52d9e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/mime-type-detection/zipball/b6a5854368533df0295c5761a0253656a2e52d9e",
-                "reference": "b6a5854368533df0295c5761a0253656a2e52d9e",
-                "shasum": ""
-            },
-            "require": {
-                "ext-fileinfo": "*",
-                "php": "^7.4 || ^8.0"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^3.2",
-                "phpstan/phpstan": "^0.12.68",
-                "phpunit/phpunit": "^8.5.8 || ^9.3 || ^10.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "League\\MimeTypeDetection\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Frank de Jonge",
-                    "email": "info@frankdejonge.nl"
-                }
-            ],
-            "description": "Mime-type detection for Flysystem",
-            "support": {
-                "issues": "https://github.com/thephpleague/mime-type-detection/issues",
-                "source": "https://github.com/thephpleague/mime-type-detection/tree/1.14.0"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/frankdejonge",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/league/flysystem",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2023-10-17T14:13:20+00:00"
         },
         {
             "name": "nyholm/psr7",
@@ -2103,6 +1849,55 @@
                 }
             ],
             "time": "2023-11-09T08:28:21+00:00"
+        },
+        {
+            "name": "webmozart/glob",
+            "version": "4.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webmozarts/glob.git",
+                "reference": "3c17f7dec3d9d0e87b575026011f2e75a56ed655"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webmozarts/glob/zipball/3c17f7dec3d9d0e87b575026011f2e75a56ed655",
+                "reference": "3c17f7dec3d9d0e87b575026011f2e75a56ed655",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.3 || ^8.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5",
+                "symfony/filesystem": "^5.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Webmozart\\Glob\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bernhard Schussek",
+                    "email": "bschussek@gmail.com"
+                }
+            ],
+            "description": "A PHP implementation of Ant's glob.",
+            "support": {
+                "issues": "https://github.com/webmozarts/glob/issues",
+                "source": "https://github.com/webmozarts/glob/tree/4.6.0"
+            },
+            "time": "2022-05-24T19:45:58+00:00"
         }
     ],
     "packages-dev": [
@@ -4703,7 +4498,6 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "flow-php/etl": 20,
-        "flow-php/etl-adapter-chartjs": 20,
         "flow-php/etl-adapter-csv": 20,
         "flow-php/etl-adapter-http": 20,
         "flow-php/etl-adapter-json": 20

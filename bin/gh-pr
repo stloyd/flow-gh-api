@@ -2,7 +2,7 @@
 <?php declare(strict_types=1);
 
 use App\Command\FetchCommand;
-use App\Command\ReportCommand;
+use App\Command\AggregateCommand;
 use Symfony\Component\Console\Application;
 use Symfony\Component\Dotenv\Dotenv;
 
@@ -12,5 +12,5 @@ require __DIR__.'/../vendor/autoload.php';
 
 $application = new Application();
 $application->add(new FetchCommand(getenv('GITHUB_TOKEN') ?: ''));
-$application->add(new ReportCommand());
+$application->add(new AggregateCommand());
 $application->run();
